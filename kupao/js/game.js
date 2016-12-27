@@ -177,7 +177,7 @@ game.prototype= {
         this.mouse();
     },
     run:function () {
-        this.name=prompt("请输入姓名","perte")
+        this.name=prompt("请输入姓名","nannan")
         var that=this;
         that.ts.t1=setInterval(function () {
         that.move()
