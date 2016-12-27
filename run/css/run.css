@@ -1,0 +1,196 @@
+body,html{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+}
+canvas{
+    background:#000 url(../img/back.png) repeat-x left 200px;
+}
+.title{
+    width:80%;
+    height:90%;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /*border:1px solid #fff;*/
+    z-index:1;
+    text-align: center;
+    opacity:0;
+    transform:scale(0.1);
+    animation:title 1s linear 1s forwards;
+    background:url(../img/mingcheng.png) -150px -100px;
+
+}
+.start{
+    width:250px;
+    height:250px;
+    position:absolute;
+    left:550px;
+    top:400px;
+    /*z-index:1;*/
+    background:url(../img/huang.png) no-repeat;
+    background-size:cover;
+    opacity:0;
+    transform:scale(0.1);
+    animation:start 3s linear 2s forwards;
+}
+#start_text{
+    width:120px;
+    height:80px;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background:url(../img/start.png) no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    transform:scale(0.1);
+    animation:start_text 2s linear 5s forwards;
+}
+.cover{
+    width:100%;
+    height:100%;
+    background:url(../img/cover.png);
+    background-size:100% 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    animation:cover 0.5s linear forwards;
+}
+@keyframes title {
+    0%{
+        opacity:1;
+        transform:scale(0.1);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+@keyframes start {
+    0%{
+        z-index:1;
+        opacity:1;
+        transform:translate(0,0) scale(0.1);
+    }
+    100%{
+        z-index:1;
+        opacity:1;
+        transform:translate(-20px,-200px) scale(1);
+    }
+}
+@keyframes start_text{
+    0%{
+        transform:scale(0.1);
+    }
+    50%{
+        transform:scale(0.5) rotate(180deg);
+    }
+    100%{
+        transform:scale(1) rotate(360deg);
+    }
+}
+@keyframes cover {
+    0%{
+        transform:translate(0,-800px);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+@keyframes cover1 {
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        transform:translate(0,-800px);
+    }
+}
+.zhezhao{
+    width: 100%;
+    height: 100%;
+    animation:mask 2s ease forwards;
+    position: absolute;
+    left:0;
+    top:0;
+    padding-left:30px;
+}
+.lif{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #fff;
+    font-family: block;
+}
+.life{
+    width: 200px;
+    height:10px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin-top: 50px;
+    margin-left: 10px;
+    background: green;
+}
+.pres{
+    height: 100%;
+    background: #79DDF4;
+    float: right;
+}
+
+.over{
+    width: 26%;
+    height: 45%;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(255,255,255,0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    animation: strat1 1s ease forwards;
+}
+.again{
+    margin-top: 10px;
+}
+.game{
+    line-height: 80px;
+    color: #fff;
+    font-size: 20px;
+}
+@keyframes strat1 {
+    0%{
+        transform: translate(0,0px);
+    }
+    100%{
+        transform: translate(0,-1000px);
+    }
+}
+@keyframes mask{
+    0%{
+        background: rgba(0,0,0,0);
+    }
+    100%{
+        background: rgba(0,0,0,.6);
+    }
+}
+@keyframes zhezhao1{
+    0%{
+        background: rgba(0,0,0,0.6);
+    }
+    100%{
+        background: rgba(0,0,0,0);
+    }
+}
