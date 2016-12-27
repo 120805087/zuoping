@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页</title>
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+	    <script src="js/bace.js"></script>
+	    <script src="js/reg.js"></script>
+	</head>
+	<style>
+		body,html{
+		width:100%;
+		height:100%;
+	}
+		header{
+			width:100%;
+			height:0.86rem;
+			background:#EB413D;
+			box-shadow: 0 0.05rem 0.5rem #C5A9A9;
+			color:#fff;
+			display:flex;
+			align-items: center;
+			position: fixed;
+			z-index: 99999;
+		}
+		header .icon-fanhuiicon:before{
+			font-size:0.34rem;
+		}
+		header div{
+			box-sizing: border-box;
+			padding-left:0.36rem;
+		}
+		header div span{
+			padding-left:0.4rem;
+			font-size:0.28rem;
+		}
+		section{
+			width:100%;
+			height:100%;
+			background:#F6F6F6;
+			display: flex;
+		}
+		section form{
+			width:100%;
+		}
+		.infoArea,.submit,.loginArea{
+			width:7rem;
+			height:2.1rem;
+			border:1px solid #E7E7E7;
+			margin:0 auto;
+			margin-top:1.15rem;
+			background:#fff;
+			border-radius:0.03rem;
+		}
+		.user,.pass{
+			width:100%;
+			height:50%;
+			display: flex;
+			position: relative;
+		}
+		.user label,.pass label{
+			width:15%;
+			display: flex;
+			justify-content: center;
+		}
+		.user label:before,.pass label:before{
+			font-size:0.3rem;
+			color:#666666;
+			align-self:center;
+		}
+		.user input[type=text],.pass input[type=password]{
+			width:85%;
+			height:100%;
+			border:none;
+			outline:none;
+			font-size:0.26rem;
+			border-bottom:1px solid #E7E7E7;
+			margin-right:0.2rem;
+			box-sizing:border-box;
+		}
+        .pass input[type=password]	{
+        	border-bottom:none;
+        }
+        .pass a{
+        	position: absolute;
+        	font-size:0.28rem;
+        	right:0.24rem;
+        	top:0.4rem;
+        	color:#6A6A6A;
+        }
+        .submit{
+        	margin-top:0.16rem;
+        	height:0.7rem;
+        	display: flex;
+        }
+        .submit input[type=submit]{
+        	border:none;
+        	outline:none;
+        	background:#fff;
+        	font-size:0.3rem;
+        	text-align:center;
+        	width:100%;
+        	height:100%;
+        }
+        .loginText{
+        	width:7rem;
+			margin:0 auto;
+			margin-top:0.6rem;
+			font-size:0.2rem;
+        }
+        .loginArea{
+        	margin-top:0.15rem;
+        	height:3.08rem;
+        }
+        .login-menu{
+        	height:2.22rem;
+        	display: -webkit-box;
+        	display: flex;
+        	justify-content: space-around;
+        }
+        .login-list{
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	padding-top:0.4rem;
+        	box-sizing: border-box;
+        }
+        .login-list div{
+        	text-align:center;
+        }
+        .login-list div:before{
+        	font-size:1.05rem;
+        }
+        .login-menu .login-list:nth-child(1) div:before{
+        	color:#51b341;
+        }
+        .login-menu .login-list:nth-child(2) div:before{
+        	color:#ff9b0f;
+        }
+        .login-menu .login-list:nth-child(3) div:before{
+        	color:#309bdf;
+        }
+        .login-list span{
+        	font-size:0.24rem;
+        	color:#787777;
+        	font-weight: 400;
+        }
+        .login-reg{
+        	height:0.24rem;
+        	font-size:0.22rem;
+        	padding:0.3rem 0;
+        	margin:0 0.24rem;
+        	border-top:1px solid #E7E7E7;
+        }
+        .login-reg a:nth-child(1){
+        	color:#ff6d69;
+        
+        }
+        .login-reg a:nth-child(2){
+          float: right;
+        }	
+        .login-reg a:nth-child(2):before{
+          font-size:0.22rem;
+          transform:rotateY(90deg);
+        }																																																																																																																																																																																																																																																							
+	</style>
+	<body>
+		<header>
+			<div class="iconfont icon-fanhuiicon">
+				<span>登录</span></div>
+		</header>
+		<section>
+			<form action="">
+				<div class="infoArea">
+					<div class="user">
+					    <label for="user" class="iconfont icon-wode"></label>
+					    <input type="text" id="user" placeholder="网易邮箱/手机号"/>
+					</div>
+					<div class="pass">
+						<label for="pass" class="iconfont icon-mima"></label>
+					    <input type="password" id="pass" placeholder="密码"/>
+					    <a href="javascript:;">忘记密码?</a>
+					</div>
+				</div>
+				<div class="submit">
+					<input type="submit" value="登录"/>
+				</div>
+				<p class="loginText">还可以选择一下的方式登录</p>
+				<div class="loginArea">
+					<div class="login-menu">
+						<div class="login-list">
+							<div class="iconfont icon-qietu08"></div>
+							<span>微信账号登录</span>
+						</div>
+						<div class="login-list">
+							<div class="iconfont icon-xinlang1"></div>
+							<span>新浪微博登录</span>
+						</div>
+						<div class="login-list">
+							<div class="iconfont icon-qq"></div>
+							<span>QQ账号登录</span>
+						</div>
+					</div>
+					<div class="login-reg">
+						没有账号？ <a href="javascript:;">注册网页邮箱</a><a href="" class="iconfont icon-next"></a>
+					</div>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

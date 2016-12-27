@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>搜索页</title>
+		<link rel="stylesheet" href="css/bace.css" />
+		<script src="js/zepto.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script src="js/bace.js"></script>
+		<script src="js/reg.js"></script>
+	</head>
+	<style>
+		body,html{
+			width:100%;
+		}
+		header{
+			width:100%;
+			height:45px;
+			background:#EDEDED;
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:2;
+			display: flex;
+		}
+		header input[type=search]{
+			width:6.28rem;
+			height:0.54rem;
+			box-sizing:border-box;
+			outline:none;
+			text-align: center;
+			align-self:center;
+			margin:0 0.15rem;
+			border-radius:0.5rem;
+			border:none;
+		}
+		header span{
+			font-size:0.32rem;
+			color:#3A94FB;
+			font-weight: 600;
+			align-self: center;
+		}
+		#wrapper{
+			position:absolute;
+			left:0;
+			top:45px;
+			bottom:0;
+			overflow: hidden;
+			width:100%;
+		}
+		#scroller{
+			position: absolute;
+			z-index: 1;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			width: 100%;
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-text-size-adjust: none;
+			-moz-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+			-o-text-size-adjust: none;
+			text-size-adjust: none;    
+		}
+		.searchArea{
+			width:7.08rem;
+			height:100%;
+			margin:0 auto;
+		}
+		.searchArea p{
+			margin-top:1.2rem;
+			font-size:0.32rem;
+			color:#AFAFAF;
+			border-bottom:1px solid #F2F3F6;
+			padding-bottom:0.1rem;
+		}
+		.searchArea a{
+			color:#343434;
+			font-size:0.3rem;
+			padding:0.2rem;
+			border:1px solid #F2F2F2;
+			border-radius:0.2rem;
+			font-weight: 600;
+		}
+	</style>
+	<body>
+		<header>
+			<input type="search" results="s" placeholder="请输入关键词..."/>
+		   <span>取消</span>
+		</header>
+		<div id="wrapper">
+			<div id="scroller">
+				<div class="searchArea">
+					<p>近期热点</p>
+					<a>首艘国产航母曝光</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>自付宝连夜发新规</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+					<a>2017年节假日放假安排</a><br>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册页</title>
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/reg.js"></script>
+	</head>
+	<style>
+	body,html{
+		width:100%;
+		height:100%;
+	}
+		header{
+			width:100%;
+			height:0.86rem;
+			background:#EB413D;
+			box-shadow: 0 0.05rem 0.5rem #C5A9A9;
+			color:#fff;
+			display:flex;
+			align-items: center;
+			position: fixed;
+			z-index:9999;
+		}
+		header .icon-fanhuiicon:before{
+			font-size:0.34rem;
+		}
+		header div{
+			box-sizing: border-box;
+			padding-left:0.36rem;
+		}
+		header div span{
+			padding-left:0.4rem;
+			font-size:0.28rem;
+		}
+		section{
+			width:100%;
+			height:100%;
+			background:#ECECEC;
+			display: flex;
+		}
+		.regAare{
+			width:5.3rem;
+			height:5rem;
+			margin:0 auto;
+			margin-top:0.96rem;
+			padding-top:0.55rem;
+		}
+		.regAare p{
+			font-size:0.36rem;
+			color:#2d2d2d;
+		}
+		.regAare .shouji,.regAare .youxiang{
+			width:100%;
+			height:1.12rem;
+			box-sizing: border-box;
+			border:1px solid #D2D2D2;
+			background:#fff;
+			margin-top:0.3rem;
+			border-radius:0.1rem;
+			padding:0 0.25rem;
+			display: flex;
+			position: relative;
+		}
+		.shouji .icon-next,.youxiang .icon-next{
+			position: absolute;
+			right:0.25rem;
+			top:0.45rem;
+		}
+		.shouji .icon-next:before,.youxiang .icon-next:before{
+			color:#DFDFDF;
+			font-size:0.14rem;
+		}
+		.shouji_text,.youxiang_text{
+			width:80%;
+			display: flex;
+			flex-direction: column;
+		}
+		.shouji_icon,.youxiang_icon{
+			width:20%;
+			align-self:center;
+		}
+		.shouji_icon:before,.youxiang_icon:before{
+			font-size:0.65rem;
+			color:#9BD0FD;
+		}
+		.regAare .shouji span:nth-child(1),.regAare .youxiang span:nth-child(1){
+			font-size:0.3rem;
+			color:#474747;
+			margin-top:0.15rem;
+		}
+		.regAare .shouji span:nth-child(2),.regAare .youxiang span:nth-child(2){
+			font-size:0.2rem;
+			color:#B5B5B5;
+			margin-top:0.15rem;
+		}
+		.tishi{
+			width:100%;
+			height:0.76rem;
+			margin-top:0.33rem;
+			display: flex;
+		}
+		.tisi_icon{
+			font-size:0.3rem;
+			color:#7BAFE7;
+			padding-right:0.1rem;
+		}
+		.tishi_text{
+			font-size:0.24rem;
+			color:#8E8E8E;
+		}
+	</style>
+	<body>
+		<header>
+			<div class="iconfont icon-fanhuiicon">
+				<span>注册网易邮箱</span></div>
+		</header>
+		<section>
+			<div class="regAare">
+				<p>欢迎注册邮箱账号</p>
+				
+					<div class="shouji">
+						<div class="iconfont icon-shouji shouji_icon"></div>
+						<a href="reg.html" style="width:200px;">
+						<div class="shouji_text">
+							<span>手机号注册</span>
+							<span>免费验证短信,快速注册</span>
+						</div>
+                        </a>						
+						<a href="javascript:;" class="iconfont icon-next"></a>
+					</div>
+				
+					<div class="youxiang">
+						<div class="iconfont icon-youjian youxiang_icon"></div>
+						<a href="reg2.html" style="width:200px;">
+						<div class="youxiang_text">
+							<span>邮箱注册</span>
+							<span>使用您常用的邮箱注册</span>
+						</div>
+						</a>
+						<a href="javascript:;" class="iconfont icon-next"></a>
+					</div>
+				<div class="tishi">
+					<div class="iconfont icon-tishi tisi_icon"></div>
+				  <div class="tishi_text">
+				  	  如果你已经注册"网易邮箱"或者网易其他产品请直接登录。
+				  </div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

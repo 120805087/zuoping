@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册页</title>
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="js/bace.js"></script>
+		<script src="js/reg.js"></script>
+	</head>
+	<style>
+	body,html{
+		width:100%;
+		height:100%;
+	}
+		header{
+			width:100%;
+			height:0.86rem;
+			background:#EB413D;
+			box-shadow: 0 0.05rem 0.5rem #C5A9A9;
+			color:#fff;
+			display:flex;
+			align-items: center;
+			position: fixed;
+		}
+		header .icon-fanhuiicon:before{
+			font-size:0.34rem;
+		}
+		header div{
+			box-sizing: border-box;
+			padding-left:0.36rem;
+		}
+		header div span{
+			padding-left:0.4rem;
+			font-size:0.28rem;
+		}
+		section{
+			width:100%;
+			height:100%;
+			background:#ECECEC;
+			display: flex;
+		}
+		section form{
+			width:100%;
+			height:100%;
+		}
+		.email,.pass,.vilida{
+			width:5.24rem;
+			height:0.94rem;
+			border:1px solid #C9C9C9;
+			margin: 0 auto;
+			margin-top:1.52rem;
+			display: flex;
+			box-shadow: 1rem 0 0.5rem #939393 inset;
+		}
+		.submit,.yijianshu{
+			width:5.24rem;
+			height:0.94rem;
+			margin: 0 auto;
+			display: flex;
+		}
+		.pass,.vilida,.submit,.yijianshu{
+			margin-top:0.36rem;
+		}
+		.submit input[type=submit]{
+			width:100%;
+			height:100%;
+			border:none;
+			background:#69B3F2;
+			border-radius:0.03rem;
+			font-size:0.34rem;
+			color:#fff;
+			font-weight: 600;
+		}
+		.email input[type=text],.pass input[type=password],.vilida input[type=text]{
+			width:3.2rem;
+			height:0.94rem;
+			border:none;
+			outline: none;
+			padding-left:0.2rem;
+		}
+		.email label,.pass label,.vilida label{
+			width:2.04rem;
+			height:0.94rem;
+			font-size:0.22rem;
+			text-align: center;
+			line-height:0.94rem;
+			background:#fff;
+		}
+		.vilida label{
+			background:url(img/vile.png);
+			background-size:cover;
+		}
+		.pass label span{
+			padding:0.25rem 0.26rem; 
+			background:#ECECEC;
+			color:#383838;
+			font-weight:bold;
+		}
+		.yijianshu input[type=checkbox]{
+			width:0.4rem;
+			height:0.4rem;
+			margin-right:0.2rem;
+		}
+		.yijianshu{
+			font-size:0.26rem;
+		}
+		.yijianshu strong{
+			color:#316EAE;
+		}
+	</style>
+	<body>
+		<header>
+			<div class="iconfont icon-fanhuiicon">
+				<span>注册网易邮箱</span></div>
+		</header>
+		<section>
+			<form action="" method="post">
+				<div class="email">
+				   <input type="text" id="email" placeholder="6到18个字符，字母开头"/>
+				   <label for="email">@163.com</label>
+				</div>
+				<div class="pass">
+				   <input type="password" id="pass" placeholder="密码:6到16个字符"/>
+				   <label for="pass"><span>显示</span></label>
+				</div>
+				<div class="vilida">
+				   <input type="text" id="vilda" placeholder="验证码 （点击切换）"/>
+				   <label for="vilida"></label>
+				</div>
+				<div class="submit">
+					<input type="submit" value="立即注册"/>
+				</div>
+				<div class="yijianshu">
+					<input type="checkbox" checked="checked"/>
+					<span>我同意&nbsp;<strong>"服务条款"</strong>&nbsp;和&nbsp;<strong>"网络游戏用户隐私权保护和个人信息利用政策"</strong></span>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

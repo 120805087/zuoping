@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="x5-orientation" content="portrait" /> 
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/bace.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/iscroll.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/bace.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body onload="loaded()">
+		<!--头部-->
+		<header id="header">
+			<div class="header-top">
+				<div class="user"></div>
+				<div class="logo"></div>
+				<a href="javascript:;">
+					<div class="downLoad"></div>
+				</a>
+				<a href="javascript:;">
+					<div class="email"></div>
+				</a>
+			</div>
+			<div class="mian-content">
+					<div class="nav-warp">
+						<nav class="nav">
+							<a href="javascript:;">推介</a>
+							<a href="list.html">新闻</a>
+							<a href="javascript:;">娱乐</a>
+							<a href="javascript:;">体育</a>
+							<a href="javascript:;">图片</a>
+							<a href="javascript:;">财经</a>
+							<a href="javascript:;">汽车</a>
+						</nav>
+						<div class="nav-next iconfont icon-next"></div>
+					</div>
+		</header>
+		<!--内容-->
+		<div id="wrapper" style="top:85px">
+	        <div id="scroller">
+					<div class="content-inner">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="img/1.jpg" alt="" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="img/2.jpg" alt="" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="img/3.jpg" alt="" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="img/4.jpg" alt="" />
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="javascript:;">
+										<img src="img/5.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+					        <div class="swiper-pagination"></div>
+						</div>
+						<div class="content-area">
+							<section class="text-warp">
+								<a href="javascript:;">
+									<p class="item-text">习近平：弘扬宪法精神 推动宪法实施</p>
+								</a>
+							</section>
+							<section class="gunggao">
+								<div class="guangbg"></div>
+								<ul class="ranklist">
+									<li>
+										<img src="img/gao1.jpg" alt="" />
+									</li>
+									<li>
+										<img src="img/gao2.jpg" alt="" />
+									</li>
+									<li>
+										<img src="img/gao3.jpg" alt="" />
+									</li>
+								</ul>
+							</section>
+							<section class="list-item">
+								<a href="javascript:;">
+									<div class="item-title">
+										死后21年改判无罪 聂树斌案究竟改变了什么
+									</div>
+									<div class="item-pic">
+										<div class="item-pic-warp">
+											<img src="img/it1.jpg" alt="" />
+											<img src="img/it2.jpg" alt="" />
+											<img src="img/it3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="item-info">
+										<div class="item-info-l">
+											<span class="item-info-marke">
+												推介
+											</span>
+											<span class="item-info-time">
+												前天
+											</span>
+										</div>
+										<div class="item-info-r">
+											<span class="iconfont icon-usermsg"></span>89</div>
+									</div>
+								</a>
+							</section>
+<section class="list-item">
+								<a href="javascript:;">
+									<div class="item-title">
+										死后21年改判无罪 聂树斌案究竟改变了什么
+									</div>
+									<div class="item-pic">
+										<div class="item-pic-warp">
+											<img src="img/it1.jpg" alt="" />
+											<img src="img/it2.jpg" alt="" />
+											<img src="img/it3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="item-info">
+										<div class="item-info-l">
+											<span class="item-info-marke">
+												推介
+											</span>
+											<span class="item-info-time">
+												前天
+											</span>
+										</div>
+										<div class="item-info-r">
+											<span class="iconfont icon-usermsg"></span>89</div>
+									</div>
+								</a>
+							</section>
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<ul class="footer-warp">
+				<li class="footer-active">
+					<div class="iconfont icon-xinwen"></div>
+					<p>新闻</p>
+				</li>
+				<li>
+					<div class="iconfont icon-zhibodiba2"></div>
+					<p>直播</p>
+				</li>
+				<li>
+					<div class="iconfont icon-icon00105"></div>
+					<p>话题</p>
+				</li>
+				<li>
+					<a href="mycenter.html">
+						<div class="iconfont icon-wode""></div>
+					    <p>我</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', { mouseWheel: true,bounce:false });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</html>
