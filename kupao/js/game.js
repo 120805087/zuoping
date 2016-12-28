@@ -184,7 +184,7 @@ game.prototype= {
         },50)
     },
     move:function () {
-        var that=this
+        var that=this;
         that.runa.play();
         that.num++;
         that.num1+=6;
@@ -220,9 +220,9 @@ game.prototype= {
                     that.person.life--;
                     // that.hita.play();
                     // 碰撞声音
-                    that.lif.style.width=100-(that.person.life)*33+"%";
+                    that.lif.innerHTML = that.person.life;
                     if(that.person.life==0){
-                        that.lif.style.width=100+"%";
+                        // that.lif.innerHTML=3;
                         // 排名榜
                         var messages=localStorage.messages?JSON.parse(localStorage.messages):[];
                         var temp={name:that.name,score:that.score};
@@ -386,8 +386,8 @@ game.prototype= {
             that.init=0;
             that.y1=that.person.y;
             that.jifen.innerHTML=that.score;
-            that.lif.style.width=0;
             that.run();
+            that.lif.innerHTML=3;
             btn1.onclick=null;
         }
     }
